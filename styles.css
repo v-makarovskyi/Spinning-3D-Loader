@@ -41,19 +41,25 @@ body {
 }
 
 .area .ring.ring--1 {
+  border-right-color: red;
+  border-top-color: orange;
   --r: rotateY(0);
   transform: translate(-50%, -50%) rotateZ(0deg);
 }
 
 .area .ring.ring--2 {
+  border-right-color: yellow;
+  border-top-color: yellowgreen;
   --r: rotateY(-90deg);
   transform: translate(-50%, -50%) var(--r);
   animation-delay: calc(1s * 0.75);
 }
 
 .area .ring.ring--3 {
+  border-right-color: blue;
+  border-top-color: rgb(67, 52, 227);
   --r: rotateX(-90deg);
-  transform: translate(-50%, -50%) rotateX(-90deg);
+  transform: translate(-50%, -50%) var(--r);
   animation-delay: calc(1s * 0.5);
 }
 
